@@ -1,0 +1,132 @@
+{
+  "name": "psrm-26-layouts",
+  "version": "0.0.1",
+  "description": "Layouts for the PSR Marathon 2026",
+  "author": {
+    "name": "PokemonSpeedruns"
+  },
+  "files": [
+    "graphics"
+  ],
+  "keywords": [
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^2.0.0",
+    "graphics": [
+      {
+        "file": "16x9_1p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "16x9_2p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "16x9_2p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "16x9_3p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "3DS_1p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "4x3_1p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "DS_1p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "DS_1p_IV.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "DS_2p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "DS_3p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "GB_1p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "GB_1p_Cam.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "GB_1p_Catch.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "GBA_1p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "GBA_1p_Cam.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "GBA_2p.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "GBA_2p_Catch.html",
+        "width": 1920,
+        "height": 1080
+      },
+
+      {
+        "file": "Intermission.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Comms.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Preshow.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Background.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Omnibar.html",
+        "width": 1920,
+        "height": 99
+      }
+    ]
+  },
+  "repository": "https://github.com/PokemonSpeedruns/psrm-24-layouts.git",
+  "license": "Apache-2.0"
+}

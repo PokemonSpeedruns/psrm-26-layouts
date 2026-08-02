@@ -1,0 +1,116 @@
+/* Runner and pronouns panel. */
+.runner-container {
+	width: 727px;
+	height: 60px;
+	line-height: 60px;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Player 1 info position. */
+#runner-container1 {
+	left: 5px;
+	top: 430px;
+}
+
+/* Player 2 info position. */
+#runner-container2 {
+	left: 1168px;
+	top: 430px;
+}
+
+/* Player 3 info position. */
+#runner-container3 {
+	left: 5px;
+	top: 495px;
+}
+
+/* Player 4 info position. */
+#runner-container4 {
+	left: 1168px;
+	top: 495px;
+}
+
+/* Comms panel. */
+.comms-container {
+	width: 390px;
+	height: 65px;
+	line-height: 60px;
+	
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#comms-container1 {
+	left: 760px;
+	top: 588px;
+}
+
+#comms-container2 {
+	left: 760px;
+	top: 653px;
+}
+
+#comms-container3 {
+	left: 760px;
+	top: 714px;
+}
+
+/* Comms name dynamic text. */
+.comms-name {
+	font-size: 23pt;
+	max-width: 295px;
+}
+
+/* Game name panel. */
+#game-name {
+	width: 402px;
+	height: 60px;
+	line-height: 60px;
+	left: 757px;
+	top: 400px;
+	
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+/* Category and estimate panel. */
+#info-container {
+	width: 398px;
+	height: 30px;
+	line-height: 30px;
+	left: 757px;
+	top: 460px;
+
+	font-size: 20px;
+	
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/* Timer panel. */
+#timer {
+	width: 406px;
+	height: 60px;
+	line-height: 60px;
+	left: 757px;
+	top: 495px;
+	
+	font-size: 42pt;
+}
+
+/* Estimate panel. */
+#estimate-container {
+	position: absolute;
+	left: 757px;
+	top: 551px;
+}
+
+#estimate {
+	font-size: 24px;
+}
+
+#estimate-label img {
+	height: 20pt;
+}

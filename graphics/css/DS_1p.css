@@ -1,0 +1,90 @@
+/* Runner and pronouns panel. */
+#runner-container1 {
+	width: 565px;
+	height: 70px;
+	line-height: 70px;
+	left: 15px;
+	top: 15px;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Runner name dynamic text. */
+.runner-name {
+	max-width: 500px;
+}
+
+/* Comms panel. */
+.comms-container {
+	width: 565px;
+	height: 70px;
+	line-height: 70px;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#comms-container1 {
+	left: 15px;
+	top: 91px;
+}
+
+#comms-container2 {
+	left: 15px;
+	top: 150px;
+}
+
+#comms-container3 {
+	left: 15px;
+	top: 212px;
+}
+
+/* Comms name dynamic text. */
+.comms-name {
+	max-width: 500px;
+}
+
+/* Game name panel. */
+#game-name {
+	width: 565px;
+	height: 60px;
+	line-height: 60px;
+	left: 15px;
+	top: 413px;
+    font-size: 35pt;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Category panel. */
+#info-container {
+	width: 565px;
+	height: 40px;
+	line-height: 40px;
+	left: 15px;
+	top: 473px;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Timer panel. */
+#timer {
+	width: 565px;
+	height: 60px;
+	line-height: 60px;
+	left: 15px;
+	top: 300px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Estimate panel. */
+#estimate-container {
+	position: absolute;
+	left: 18px;
+	top: 357px;
+}

@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+
+/* Idk wtf I'm looking at LOL - Tahis */
+
+/* #omnibar {
+    position: absolute;
+    background-color: #ffff00;
+    display: flex;
+    width: 1070px;
+    height: 100px;
+    left: 850px;
+} */
+
+#omnibar > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#omnibar-content {
+    flex: 1;
+    color: #2c88c5;
+}
+
+#omnibar-content * {
+    display: initial;
+}
+
+.is-single-line {
+    font-size: 30pt;
+}
+
+.is-multiline {
+    font-size: 20pt;
+    margin: 0;
+}
+
+.is-text-centered {
+    margin: 0 auto;
+}

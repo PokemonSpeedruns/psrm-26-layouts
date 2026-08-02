@@ -1,0 +1,76 @@
+/* Up Next label. */
+#up-next-label {
+	font-size: 24pt;
+	width: 642px;
+	position: absolute;
+	top: 226px;
+	left: 1240px;
+	
+	border: 2px solid transparent;
+}
+
+/* Game panel. */
+#up-next-game {
+	font-size: 60pt;
+    width: 1452px;
+    line-height: 72px;
+    position: absolute;
+	text-align: center;
+    top: 5px;
+    left: 439px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: 2px solid transparent;
+}
+
+/* Up Next info panel. */
+#up-next-info-container {
+	width: 1452px;
+	line-height: 40px;
+	position: absolute;
+	text-align: center;
+	top: 100px;
+	left: 439px;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	border: 2px solid transparent;	
+}
+
+/* Info panel options. Don't change unless you know what you're doing! */
+.info {
+	margin-top: 3px;
+	font-size: 22pt;
+	font-stretch: semi-condensed;
+	float: left;
+	vertical-align: middle;
+	width: 100%;
+	flex: 1;
+}
+
+.estimate-container {
+	float: right;
+	font-stretch: normal;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.estimate-label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.estimate {
+	display: inline-block;
+	font-stretch: normal;
+	font-size: 20pt;
+	margin-top: 6px;
+}
+
+.estimate-label img {
+	height: 27pt;
+	width: 100%;
+}
