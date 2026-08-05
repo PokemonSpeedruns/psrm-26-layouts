@@ -9,9 +9,14 @@
 	src: url('../fonts/Futura\ Heavy.ttf');
 }
 
+@font-face {
+	font-family: 'Exo_Soft';
+	src: url('../fonts/Exo_Soft_Extra_Bold.otf');
+}
+
 /* General settings. */
 body {
-	font-family: 'Futura Heavy';
+	font-family: 'Exo_Soft';
 	color: #FFFF00;
 	width: 1920px;
 	height: 1080px;

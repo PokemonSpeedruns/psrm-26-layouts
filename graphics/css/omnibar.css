@@ -4,14 +4,15 @@ body {
 
 /* Idk wtf I'm looking at LOL - Tahis */
 
-/* #omnibar {
+#omnibar {
     position: absolute;
-    background-color: #ffff00;
+    /* background-color: #ffff00; */
     display: flex;
-    width: 1070px;
+    width: 1600px;
     height: 100px;
-    left: 850px;
-} */
+    left: 110px;
+    bottom: 5px;
+}
 
 #omnibar > * {
     display: flex;
@@ -19,9 +20,16 @@ body {
     justify-content: center;
 }
 
+#event-name {
+    color: #2c88c5;
+    font-size: 40pt;
+
+}
+
 #omnibar-content {
     flex: 1;
     color: #2c88c5;
+    font-family: 'Exo_Soft';
 }
 
 #omnibar-content * {
@@ -29,7 +37,7 @@ body {
 }
 
 .is-single-line {
-    font-size: 30pt;
+    font-size: 26pt;
 }
 
 .is-multiline {
