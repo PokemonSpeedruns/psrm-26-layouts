@@ -43,12 +43,14 @@ function loadFromSpeedControl() {
 }
 
 function refreshNextRunsData(currentRun) {
-	let nextRuns = getNextRuns(currentRun, 2);
+	let nextRuns = getNextRuns(currentRun, 3);
 
+	let upNextLabel = '#up-next-label';
 	let upNextGame = '#up-next-game';
 	let upNextInfo = '#up-next-info';
 	let upNextEstimate = '#up-next-estimate';
     
+	fadeHtml(upNextLabel, timeUntil(currentRun.customData.startTime), true);
 	fadeHtml(upNextGame, currentRun.game, true);
 	fadeHtml(upNextInfo, getNamesForRun(runDataActiveRun.value).join(', '), true);
 	fadeHtml(upNextEstimate, currentRun.estimate, true);
@@ -56,18 +58,40 @@ function refreshNextRunsData(currentRun) {
 	let i = 0;
 
 	for (let run of nextRuns) {
-		if (i >= 2) {
+		if (i >= 3) {
 			break;
 		}
 
+		let onDeckLabel = '#on-deck-label' + (i + 1);
 		let onDeckGame = '#on-deck-game' + (i + 1);
 		let onDeckRunner = '#on-deck-info' + (i + 1);
 		let onDeckEstimate = '#on-deck-estimate' + (i + 1);
 
+		fadeHtml(onDeckLabel, timeUntil(run.customData.startTime), true);
 		fadeHtml(onDeckGame, run.game, true);
-		fadeHtml(onDeckRunner, getNamesForRun(run).join(', '), true);
+		fadeHtml(onDeckRunner, getNamesForRun(run).join(' & '), true);
 		fadeHtml(onDeckEstimate, run.estimate, true);
         
 		i += 1;
 	}
+}
+
+function timeUntil(timestamp) {
+	const target = new Date(timestamp);
+	const now = new Date();
+
+	const diffMs = target - now;
+
+	if (diffMs <= 0) {
+		return "Now";
+	}
+
+	const minutes = Math.ceil(diffMs / (1000 * 60));
+
+	if (minutes < 60) {
+		return `In ${minutes} minute${minutes === 1 ? "" : "s"}`;
+	}
+
+	const hours = Math.ceil(minutes / 60);
+	return `In ${hours} hour${hours === 1 ? "" : "s"}`;
 }

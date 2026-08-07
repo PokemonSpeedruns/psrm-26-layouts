@@ -24,6 +24,10 @@
       {
         "name": "Comm3 Pronouns",
         "key": "commentator3Pronouns"
+      },
+      {
+        "name": "Start Time",
+        "key": "startTime"
       }
     ],
     "player": [
