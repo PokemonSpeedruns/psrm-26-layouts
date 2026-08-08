@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+}
+
+#omnibar {
+    position: absolute;
+    /* background-color: #ffff00; */
+    display: flex;
+    width: 1160px;
+    height: 100px;
+    left: 110px;
+    bottom: 4px;
+}
+
+#omnibar > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#event-name {
+    color: #2c88c5;
+    font-size: 40pt;
+
+}
+
+#omnibar-content {
+    flex: 1;
+    color: #2c88c5;
+    font-family: 'Exo_Soft';
+}
+
+#omnibar-content * {
+    display: initial;
+}
+
+.is-single-line {
+    font-size: 24pt;
+}
+
+.is-multiline {
+    font-size: 18pt;
+    margin: 0;
+}
+
+.is-text-centered {
+    margin: 0 auto;
+}
+
+#next-runs-box {
+    display: flex;
+    position: relative;
+    width: 500px;
+	max-height: 100px;
+	line-height: 45px;
+    left: 1275px;
+	top: 983px;
+    justify-content: flex-start;
+    font-size: 24pt;
+}
+
+#next-runs-box > * {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#next-runs-static-box {
+    flex: 0 0 160px;
+}
+
+.deck-static-text {
+    flex: 1 0;
+    color: #2c88c5;
+    text-align: right;
+    margin-bottom: 3px;
+
+    /* width: 50px
+    left: 1270px; */
+}
+
+#next-run1, #next-run2 {
+	/* bottom: 5px; */
+    margin-bottom: 3px;
+}
+
+#next-runs-dynamic-box {
+    margin-left: 15px;
+    flex: 0 0 472px;
+}

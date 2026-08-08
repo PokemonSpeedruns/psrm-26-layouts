@@ -43,32 +43,36 @@ function loadFromSpeedControl() {
 }
 
 function refreshNextRunsData(currentRun) {
-	let nextRuns = getNextRuns(currentRun, 3);
+	let nextRuns = getNextRuns(currentRun, 4);
 
 	let upNextLabel = '#up-next-label';
 	let upNextGame = '#up-next-game';
+	let upNextCategory = '#up-next-category';
 	let upNextInfo = '#up-next-info';
 	let upNextEstimate = '#up-next-estimate';
     
 	fadeHtml(upNextLabel, timeUntil(currentRun.customData.startTime), true);
 	fadeHtml(upNextGame, currentRun.game, true);
+	fadeHtml(upNextCategory, currentRun.category, true);
 	fadeHtml(upNextInfo, getNamesForRun(runDataActiveRun.value).join(', '), true);
 	fadeHtml(upNextEstimate, currentRun.estimate, true);
 
 	let i = 0;
 
 	for (let run of nextRuns) {
-		if (i >= 3) {
+		if (i >= 4) {
 			break;
 		}
 
 		let onDeckLabel = '#on-deck-label' + (i + 1);
 		let onDeckGame = '#on-deck-game' + (i + 1);
+		let onDeckCategory = '#on-deck-category' + (i + 1);
 		let onDeckRunner = '#on-deck-info' + (i + 1);
 		let onDeckEstimate = '#on-deck-estimate' + (i + 1);
 
 		fadeHtml(onDeckLabel, timeUntil(run.customData.startTime), true);
 		fadeHtml(onDeckGame, run.game, true);
+		fadeHtml(onDeckCategory, run.category, true);
 		fadeHtml(onDeckRunner, getNamesForRun(run).join(' & '), true);
 		fadeHtml(onDeckEstimate, run.estimate, true);
         

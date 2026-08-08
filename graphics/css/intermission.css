@@ -1,3 +1,8 @@
+* {
+	vertical-align: bottom;
+}
+
+
 /* Donation Total panel. */
 #donation-total {
 	font-size: 108pt;
@@ -30,31 +35,36 @@
 	border: 2px solid transparent;
 }
 
+.time-until {
+	text-align: center;
+	color: #2c88c5;
+	left: 1486px;
+	width: 300px;
+	font-size: 20pt;
+	position: absolute;
+}
+
+
 /* Up Next label. */
 #up-next-label {
+	top: 92px;
+	/* border: 2px solid transparent; */
+}
+
+.on-deck-game{
+	text-align: center;
+	left: 1330px;
+	width: 580px;
 	font-size: 24pt;
-	width: 642px;
 	position: absolute;
-	top: 226px;
-	left: 1240px;
-	
-	border: 2px solid transparent;
+	line-height: 80px;
 }
 
 /* Game panel. */
 #up-next-game {
-	font-size: 60pt;
+	/* font-size: 30pt; */
 	font-stretch: semi-condensed;
-	width: 650px;
-	line-height: 132px;
-	position: absolute;
-	top: 270px;
-	left: 1240px;
-	
-	padding-left: 15px;
-	padding-right: 15px;
-	
-	border: 2px solid transparent;
+	top: 120px;
 }
 
 /* Up Next info panel. */
@@ -83,8 +93,8 @@
 	font-size: 24pt;
 	width: 573px;
 	position: absolute;
-	top: 519px;
-	left: 1320px;
+	top: 200px;
+	left: 1620px;
 	
 	border: 2px solid transparent;
 }

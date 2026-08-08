@@ -5,7 +5,7 @@
   
       <!-- CSS -->
       <link rel="stylesheet" href="css/common.css" />
-      <link rel="stylesheet" href="css/omnibar.css" />
+      <link rel="stylesheet" href="css/omnibar_boxes.css" />
       <style>
          body {
          background: url('img/layouts/Omnibar.png') no-repeat;
@@ -20,33 +20,25 @@
    </head>
    <body>
       <div id="omnibar">
-         <div id="event-name"><p>PSR Marathon 2026</p></div>
+         <div id="event-name">PSRM 2026</div>
          <div id="omnibar-content" class="omnibar-item"></div>
       </div>
 
       <!-- Next Run -->
-      <div id="up-next-label"></div>
-      <div id="up-next-game"></div>
-      <div id="up-next-info-container">
-         <div class="info" id="up-next-info"></div>
-         <div id="estimate-container">
-            <div id="estimate-label">
-               <img src="img/common/timer.svg" />
-            </div>
-            <div class="estimate" id="up-next-estimate"></div>
+      <div id="next-runs-box">
+         <div id="next-runs-static-box">
+            <div class="deck-static-text" id="next-run-text">Next Run:</div>
+            <div class="deck-static-text" id="later-text">Later:</div>
          </div>
-      </div>
-
-      <!-- On Deck Runs -->
-      <div id="on-deck-label1"></div>
-      <div class="on-deck-game" id="on-deck-game1"></div>
-      <div id="on-deck-info-container1">
-         <div class="info" id="on-deck-info1"></div>
-         <div id="estimate-container">
-            <div id="estimate-label">
-               <img src="img/common/timer.svg" />
+         <div id="next-runs-dynamic-box">
+            <div id="next-run1">
+               <div class="on-deck-game" id="on-deck-game1"></div>
+               <!-- <div id="up-next-category"></div> -->
             </div>
-            <div class="estimate" id="on-deck-estimate1"></div>
+            <div id="next-run2"> 
+               <div class="on-deck-game" id="on-deck-game2"></div>
+               <!-- <div class="on-deck-category" id="on-deck-category1"></div> -->
+            </div>
          </div>
       </div>
    </body>

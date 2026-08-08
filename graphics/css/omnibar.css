@@ -6,7 +6,7 @@ body {
     position: absolute;
     /* background-color: #ffff00; */
     display: flex;
-    width: 1600px;
+    width: 1700px;
     height: 100px;
     left: 110px;
     bottom: 5px;
@@ -35,14 +35,8 @@ body {
 }
 
 .is-single-line {
-    font-size: 26pt;
+    font-size: 32pt;
 }
-
-.is-multiline {
-    font-size: 20pt;
-    margin: 0;
-}
-
 .is-text-centered {
     margin: 0 auto;
 }
