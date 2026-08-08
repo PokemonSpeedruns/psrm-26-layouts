@@ -62,14 +62,14 @@ body {
 }
 
 .comms-pronouns {
-	font-size: 18pt;
+	font-size: 28pt;
 	vertical-align: middle;
 	text-align: right;
 	float: right;
 }
 
 .pronouns {
-	font-size: 18pt;
+	font-size: 28pt;
 	vertical-align: middle;
 	text-align: right;
 	float: right;
@@ -107,7 +107,7 @@ body {
 }
 
 #category {
-	float: left;
+	/* float: left; */
 	vertical-align: middle;
 	flex: 1;
 }
