@@ -40,7 +40,7 @@
 	color: #2c88c5;
 	left: 1486px;
 	width: 300px;
-	font-size: 20pt;
+	font-size: 22pt;
 	position: absolute;
 }
 
@@ -67,103 +67,54 @@
 	top: 120px;
 }
 
+
 /* Up Next info panel. */
 #up-next-info-container {
-	width: 596px;
-	line-height: 65px;
-	position: absolute;
-	top: 405px;
-	left: 1296px;
-	
-	padding-left: 15px;
-	padding-right: 7.5px;
-	
-	border: 2px solid transparent;	
+	top: 184px;
 }
 
 /* Runner name dynamic text. */
-#up-next-info {
+/* #up-next-info {
 	max-width: 444px;
-	
 	border: 2px solid transparent;	
-}
+} */
 
 /* On Deck label. */
-#on-deck-label {
-	font-size: 24pt;
-	width: 573px;
-	position: absolute;
-	top: 200px;
-	left: 1620px;
-	
-	border: 2px solid transparent;
+#on-deck-label1 {
+	top: 302px;
 }
+
+
 
 /* On deck game 1. */
 #on-deck-game1 {
-	font-size: 54pt;
 	font-stretch: semi-condensed;
-	width: 572px;
-	line-height: 110px;
-	position: absolute;
-	top: 561px;
-	left: 1320px;
-	
-	padding-left: 15px;
-	padding-right: 7.5px;
-	
-	border: 2px solid transparent;
+	top: 330px;
 }
 
 /* On deck info panel 1. */
 #on-deck-info-container1 {
-	width: 515px;
-	line-height: 55px;
-	position: absolute;
-	top: 675px;
-	left: 1377px;
-	
-	padding-left: 15px;
-	padding-right: 7.5px;
-	
-	border: 2px solid transparent;
-}
-
-/* Runner name dynamic text. */
-#on-deck-info1 {
-	max-width: 345px;
-	
-	border: 2px solid transparent;	
+	top: 394px;
 }
 
 /* On deck game 2. */
 #on-deck-game2 {
-	font-size: 54pt;
-	font-stretch: semi-condensed;
-	width: 572px;
-	line-height:110px;
-	position: absolute;
-	top: 792px;
-	left: 1320px;
-	
-	padding-left: 10px;
-	padding-right: 5px;
-	
-	border: 2px solid transparent;
+	top: 538px;
 }
 
 /* On deck info panel 2. */
 #on-deck-info-container2 {
-	width: 515px;
-	line-height: 55px;
-	position: absolute;
-	top: 906px;
-	left: 1377px;
-	
-	padding-left: 15px;
-	padding-right: 7.5px;
-	
-	border: 2px solid transparent;
+	top: 600px;
+}
+
+/* On deck game 3. */
+#on-deck-game3 {
+	top: 750px;
+}
+
+/* On deck info panel 3 */
+#on-deck-info-container3 {
+	top: 814px;
 }
 
 /* Runner name dynamic text. */
@@ -174,36 +125,74 @@
 }
 
 /* Info panel options. Don't change unless you know what you're doing! */
+.info-container {
+	left: 1330px;
+	width: 580px;
+	line-height: 52px;
+	position: absolute;
+	font-size: 24pt;
+	display: inline-flex;
+	flex-wrap: wrap;
+	/* padding-left: 15px;
+	padding-right: 7.5px;
+	border: 2px solid transparent;	 */
+}
+
 .info {
 	margin-top: 3px;
-	font-size: 22pt;
+	margin-left: 60px;
+	/* width: 550px; */
+	font-size: 24pt;
 	font-stretch: semi-condensed;
 	float: left;
 	vertical-align: middle;
 	width: 100%;
-	flex: 1;
+	flex: 0 0 540px;
+}
+
+.on-deck-category {
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 24pt;
+	font-stretch: semi-condensed;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	flex: 0 0 350px;
+	/* flex: 0 0 360px; */
+
 }
 
 .estimate-container {
-	float: right;
+	/* float: right; */
+	margin-top: 5px;
 	font-stretch: normal;
 	vertical-align: middle;
-	width: 100%;
+	width: 170px;
+	max-height: 52px;
+	display: flex;
+	flex-wrap: nowrap;
+	padding-left: 40px;
 }
 
 .estimate-label {
-	display: inline-block;
+	/* display: inline-block; */
 	vertical-align: middle;
 }
 
 .estimate {
-	display: inline-block;
+	/* display: inline-block; */
 	font-stretch: normal;
-	font-size: 20pt;
-	margin-top: 6px;
+	/* font-size: 24pt; */
+	/* width: 100px; */
+	flex: 0 0 160px
+	/* margin-top: 1px; */
 }
 
 .estimate-label img {
-	height: 27pt;
-	width: 100%;
+	/* height: 12pt; */
+	width: 20px;
+	padding-bottom: 14px;
+	padding-right: 4px
 }
