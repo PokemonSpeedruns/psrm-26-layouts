@@ -97,6 +97,11 @@
 	top: 394px;
 }
 
+#on-deck-label2 {
+	top: 512px;
+}
+
+
 /* On deck game 2. */
 #on-deck-game2 {
 	top: 538px;
@@ -106,6 +111,11 @@
 #on-deck-info-container2 {
 	top: 600px;
 }
+
+#on-deck-label3 {
+	top: 723px;
+}
+
 
 /* On deck game 3. */
 #on-deck-game3 {
