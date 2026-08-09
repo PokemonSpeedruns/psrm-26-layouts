@@ -156,13 +156,13 @@ body {
 #estimate-container {
 	float: right;
 	vertical-align: middle;
+	font-family: 'Futura Heavy';
 }
 
 #estimate-label {
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: 5px;
-	font-family: 'Futura Heavy';
 }
 
 /* Stopwatch image height. */
