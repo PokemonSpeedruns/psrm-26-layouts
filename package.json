@@ -106,12 +106,47 @@
         "height": 1080
       },
       {
+        "file": "Intro.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Intro_D1.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Intro_D2.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Intro_D3.html",
+        "width": 1920,
+        "height": 1080
+      },
+        {
+        "file": "Outro_D1.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Outro_D2.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
         "file": "Preshow.html",
         "width": 1920,
         "height": 1080
       },
       {
         "file": "Background.html",
+        "width": 1920,
+        "height": 1080
+      },
+        {
+        "file": "Tech_Issues.html",
         "width": 1920,
         "height": 1080
       },
