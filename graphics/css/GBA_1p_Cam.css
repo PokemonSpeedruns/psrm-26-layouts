@@ -1,51 +1,60 @@
 /* Runner and pronouns panel. */
 #runner-container1 {
-	width: 640px;
+	width: 366px;
 	height: 80px;
 	line-height: 80px;
-	left: 100px;
-	top: 134px;
+	left: 65px;
+	top: 466px;
 	
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 /* Runner name dynamic text. */
-.runner-name {
-	max-width: 540px;
+.runner-name, .comms-name {
+	/* font-size: 20pt; */
+	/* flex: 0 0 250px; */
+	max-width: 260px;
+}
+
+.pronouns, .comms-pronouns {
+	max-width: 100px;
+	/* flex: 0 0 40px; */
 }
 
 /* Comms panel. */
 .comms-container {
-	width: 640px;
+	width: 366px;
+	max-width: 366px;
 	height: 80px;
 	line-height: 80px;
-	
-	padding-left: 10px;
-	padding-right: 10px;
+	left: 65px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 #comms-container1 {
-	left: 100px;
-	top: 200px;
+	top: 532px;
 }
 
 #comms-container2 {
-	left: 100px;
-	top: 266px;
+	top: 597px;
+
 }
 
+
 /* Comms name dynamic text. */
-.comms-name {
-	max-width: 540px;
-}
+/* .comms-name {
+    font-size: 20pt;
+	flex: 0 0 250px;
+} */
 
 /* Game name panel. */
 #game-name {
-	width: 800px;
+	width: 420px;
 	height: 44px;
 	line-height: 44px;
-	left: 100x;
+	left: 2px;
 	top: 5px;
 	color: #2c88c5;
 	padding-left: 10px;
@@ -55,10 +64,10 @@
 
 /* Category panel. */
 #info-container {
-	width: 585px;
+	width: 400px;
 	height: 36px;
-	line-height:36px;
-	left: 114px;
+	line-height: 36px;
+	left: 15px;
 	top: 40px;
 	display: flex;
 	justify-content: center;
@@ -74,20 +83,28 @@
 
 /* Timer panel. */
 #timer {
-	width: 585px;
+	width: 300px;
 	height: 80px;
 	line-height: 80px;
-	left: 114px;
+	left: 135px;
 	top: 72px;
 
 	padding-left: 10px;
 	padding-right: 10px;
+
 }
 
 /* Estimate panel. */
 #estimate-container {
 	position: absolute;
 	left: 10px;
-	top: 96px;
-	font-family: 'Futura Heavy';
+	top: 100px;
+	height: 30px;
+	line-height: 30px;
+
+}
+
+#estimate-container img {
+	width: 20px;
+	vertical-align: bottom;
 }

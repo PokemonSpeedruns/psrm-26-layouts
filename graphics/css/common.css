@@ -63,14 +63,14 @@ body {
 
 .comms-pronouns {
 	font-size: 28pt;
-	vertical-align: middle;
+	vertical-align: bottom;
 	text-align: right;
 	float: right;
 }
 
 .pronouns {
 	font-size: 28pt;
-	vertical-align: middle;
+	vertical-align: bottom;
 	text-align: right;
 	float: right;
 }
@@ -162,6 +162,7 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: 5px;
+	font-family: 'Futura Heavy';
 }
 
 /* Stopwatch image height. */
