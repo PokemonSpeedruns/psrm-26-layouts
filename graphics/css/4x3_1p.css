@@ -3,7 +3,7 @@
 	width: 550px;
 	height: 80px;
 	line-height: 80px;
-	left: 54px;
+	left: 58px;
 	top: 590px;
 	
 	padding-left: 10px;
@@ -25,7 +25,7 @@
 	width: 565px;
 	height: 70px;
 	line-height: 70px;
-	left: 54px;	
+	left: 58px;	
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -46,14 +46,15 @@
 
 /* Game name panel. */
 #game-name {
-	width: 590px;
-	height: 45px;
-	line-height: 45px;
+	width: 600px;
+	height: 40px;
+	line-height: 40px;
 	left: 0px;
-	top: 5px;
+	top: 8px;
 	color: #2c88c5;	
 	padding-left: 10px;
 	padding-right: 10px;
+	font-size: 34pt;
 }
 
 /* Category panel. */

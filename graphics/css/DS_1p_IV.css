@@ -4,7 +4,7 @@
 	height: 80px;
 	line-height: 80px;
 	left: 60px;
-	top: 350px;
+	top: 416px;
 	
 	padding-left: 10px;
 	padding-right: 10px;
@@ -31,11 +31,11 @@
 }
 
 #comms-container1 {
-	top: 417px;
+	top: 483px;
 }
 
 #comms-container2 {
-	top: 483px;
+	top: 549px;
 }
 /* Game name panel. */
 #game-name {
@@ -85,6 +85,7 @@
 	top: 92px;
 	font-family: 'Futura Heavy';
 }
+
 
 #runner-label {
 	position: absolute;

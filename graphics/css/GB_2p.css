@@ -80,9 +80,9 @@
 #game-name {
 	width: 380px;
 	height: 44px;
-	line-height: 90px;
+	line-height: 44px;
 	left: 760px;
-	top: 610px;
+	top: 635px;
 	color: #2c88c5;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -93,13 +93,17 @@
 	width: 380px;
 	height: 36px;
 	line-height: 36px;
-	left: 788px;
+	left: 760px;
 	top: 670px;
 	display: flex;
 	justify-content: center;
 	color: #2c88c5;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+#category {
+	text-align: center;
 }
 
 /* Timer panel. */
