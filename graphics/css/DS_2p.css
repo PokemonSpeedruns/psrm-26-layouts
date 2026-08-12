@@ -1,11 +1,12 @@
 /* Runner and pronouns panel. */
 .runner-container {
-	width: 587px;
+	width: 620px;
 	height: 73px;
 	line-height: 73px;
 	
 	padding-left: 10px;
 	padding-right: 10px;
+	top: 533px;
 }
 
 /* Runner name dynamic text. */
@@ -14,16 +15,26 @@
 	max-width: 430px;
 }
 
+.pronouns{
+	max-width: 240px;
+	width: 240px;
+	/* float: left; */
+	font-size: 30px;
+	text-align: right;
+	padding-left: 10px;
+
+}
+
+
+
 /* Player 1 info position. */
 #runner-container1 {
-	left: 345px;
-	top: 720px;
+	left: 60px;
 }
 
 /* Player 2 info position. */
 #runner-container2 {
-	left: 967px;
-	top: 720px;
+	left: 1260px;
 }
 
 
@@ -56,40 +67,54 @@
 
 /* Game name panel. */
 #game-name {
-	width: 792px;
-	height: 90px;
-	line-height: 90px;
-	left: 763px;
-	top: 856px;
-	
+	width: 480px;
+	height: 44px;
+	line-height: 44px;
+	left: 711px;
+	top: 5px;
+	color: #2c88c5;	
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
 /* Category and estimate panel. */
 #info-container {
-	width: 792px;
-	height: 56px;
-	line-height: 56px;
-	left: 763px;
-	top: 927px;
-	
+	width: 480px;
+	height: 36px;
+	line-height: 36px;
+	left: 711px;
+	top: 40px;
+	color: #2c88c5;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
+#category {
+	text-align: center;
+}
+
 /* Timer panel. */
 #timer {
-	width: 403px;
-	height: 90px;
-	line-height: 90px;
-	left: 345px;
-	top: 856px;
+	width: 480px;
+	height: 40px;
+	line-height: 40px;
+	left: 721px;
+	top: 90px;
 }
 
 /* Estimate panel. */
 #estimate-container {
 	position: absolute;
-	left: 347px;
-	top: 933px;
+	left: 726px;
+	top: 105px;
+	font-family: 'Futura Heavy';
+}
+
+#estimate-container img {
+	width: 20px;
+	vertical-align: bottom;
+}
+
+#estimate {
+	font-size: 15pt;
 }
