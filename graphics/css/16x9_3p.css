@@ -1,8 +1,8 @@
 /* Runner and pronouns panel. */
 .runner-container {
-	width: 740px;
-	height: 100px;
-	line-height: 100px;
+	width: 400px;
+	height: 60px;
+	line-height: 60px;
 	
 	padding-left: 10px;
 	padding-right: 10px;
@@ -14,92 +14,121 @@
 	text-align: left;
 }
 
+.pronouns{
+	max-width: 110px;
+	/* font-size: 30px; */
+	text-align: right;
+	/* padding-left: 10px; */
+
+}
+
 /* Player 1 info position. */
 #runner-container1 {
-	left: 5px;
-	top: 415px;
+	left: 940px;
+	top: 5px;
 }
 
 /* Player 2 info position. */
 #runner-container2 {
-	left: 1145px;
-	top: 415px;
+	left: 940px;
+	top: 918px;
 }
 
 /* Player 3 info position. */
 #runner-container3 {
-	left: 1145px;
-	top: 468px;
+	left: 1110px;
+	top: 738px;
 }
 
 
-/* Comms panel. */
-.comms-container {
-	width: 404px;
-	height: 70px;
+.final-time-container {
+	position: absolute;
+	width: 320px;
+	height: 60px;
 	line-height: 60px;
 	
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	justify-content: flex-start;
+	/* padding-top: 10px; */
 }
 
-#comms-container1 {
-	left: 184px;
-	top: 515px;
+
+
+.finalTime {
+	/* vertical-align: bottom; */
+	line-height: 50px;
+	font-size: 28pt;
 }
 
-#comms-container2 {
-	left: 184px;
-	top: 586px;
+#final-time-container1 {
+	left: 900px;
+	top: 72px;
 }
 
-/* Comms name dynamic text. */
-.comms-name {
-	font-size: 23pt;
-	max-width: 445px;
+#final-time-container2 {
+	left: 1394px;
+	top: 922px;
+}
+
+#final-time-container3 {
+	left: 1560px;
+	top: 740px;
 }
 
 /* Game name panel. */
 #game-name {
-	width: 730px;
-	height: 96px;
-	line-height: 96px;
-	left: 20px;
-	top: 829px;
-	
+	width: 380px;
+	height: 40px;
+	line-height: 40px;
+	left: 1520px;
+	top: 3px;
+	color: #2c88c5;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
 /* Category and estimate panel. */
 #info-container {
-	width: 730px;
-	height: 45px;
-	line-height: 45px;
-	left: 20px;
-	top: 920px;
-	
+	width: 380px;
+	height: 30px;
+	line-height: 30px;
+	left: 1520px;
+	top: 40px;
+	display: flex;
+	justify-content: center;
+	color: #2c88c5;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
+#category {
+	text-align: center;
+}
+
 /* Timer panel. */
 #timer {
-	width: 416px;
-	height: 96px;
-	line-height: 96px;
-	left: 180px;
-	top: 671px;
+	width: 400px;
+	height: 36px;
+	line-height: 36px;
+	left: 1520px;
+	top: 76px;
+	font-size: 32pt;
 }
 
 /* Estimate panel. */
 #estimate-container {
 	position: absolute;
-	left: 190px;
-	top: 767px;
+	left: 1530px;
+	top: 100px;
 }
 
-.catch-count {
-	margin-right: 10px;
-	font-size: 25px;
+#estimate-container img {
+	width: 20px;
+	vertical-align: bottom;
+}
+
+#estimate {
+	font-size: 14pt;
 }
