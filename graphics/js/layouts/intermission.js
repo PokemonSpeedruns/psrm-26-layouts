@@ -1,5 +1,6 @@
 let runDataActiveRun = nodecg.Replicant('runDataActiveRun', 'nodecg-speedcontrol');
 let runDataArray = nodecg.Replicant('runDataArray', 'nodecg-speedcontrol');
+let labelRefreshInterval;
 
 NodeCG.waitForReplicants(runDataActiveRun, runDataArray).then(loadFromSpeedControl);
 
@@ -33,16 +34,27 @@ function findIndexInRunDataArray(run) {
 
 function loadFromSpeedControl() {
 	runDataActiveRun.on('change', (newVal, oldVal) => {
-		refreshNextRunsData(newVal);
+		refreshNextRunsData(newVal, true);
 	});
 
 	runDataArray.on('change', (newVal, oldVal) => {
-		refreshNextRunsData(runDataActiveRun.value);
+		refreshNextRunsData(runDataActiveRun.value, true);
 	});
 
+	refreshNextRunsData(runDataActiveRun.value, true);
+
+	if (!labelRefreshInterval) {
+		labelRefreshInterval = setInterval(() => {
+			refreshNextRunsData(runDataActiveRun.value, false);
+		}, 5000);
+	}
 }
 
-function refreshNextRunsData(currentRun) {
+function refreshNextRunsData(currentRun, shouldFade) {
+	if (!currentRun || !runDataArray.value) {
+		return;
+	}
+
 	let nextRuns = getNextRuns(currentRun, 4);
 
 	let upNextLabel = '#up-next-label';
@@ -51,11 +63,11 @@ function refreshNextRunsData(currentRun) {
 	let upNextInfo = '#up-next-info';
 	let upNextEstimate = '#up-next-estimate';
     
-	fadeHtml(upNextLabel, timeUntil(currentRun.customData.startTime), true);
-	fadeHtml(upNextGame, currentRun.game, true);
-	fadeHtml(upNextCategory, currentRun.category, true);
-	fadeHtml(upNextInfo, getNamesForRun(runDataActiveRun.value).join(', '), true);
-	fadeHtml(upNextEstimate, currentRun.estimate, true);
+	updateHtml(upNextLabel, timeUntil(currentRun.customData.startTime), shouldFade);
+	updateHtml(upNextGame, currentRun.game, shouldFade);
+	updateHtml(upNextCategory, currentRun.category, shouldFade);
+	updateHtml(upNextInfo, getNamesForRun(runDataActiveRun.value).join(', '), shouldFade);
+	updateHtml(upNextEstimate, currentRun.estimate, shouldFade);
 
 	let i = 0;
 
@@ -70,14 +82,23 @@ function refreshNextRunsData(currentRun) {
 		let onDeckRunner = '#on-deck-info' + (i + 1);
 		let onDeckEstimate = '#on-deck-estimate' + (i + 1);
 
-		fadeHtml(onDeckLabel, timeUntil(run.customData.startTime), true);
-		fadeHtml(onDeckGame, run.game, true);
-		fadeHtml(onDeckCategory, run.category, true);
-		fadeHtml(onDeckRunner, getNamesForRun(run).join(' & '), true);
-		fadeHtml(onDeckEstimate, run.estimate, true);
+		updateHtml(onDeckLabel, timeUntil(run.customData.startTime), shouldFade);
+		updateHtml(onDeckGame, run.game, shouldFade);
+		updateHtml(onDeckCategory, run.category, shouldFade);
+		updateHtml(onDeckRunner, getNamesForRun(run).join(' & '), shouldFade);
+		updateHtml(onDeckEstimate, run.estimate, shouldFade);
         
 		i += 1;
 	}
+}
+
+function updateHtml(selector, value, shouldFade) {
+	if (shouldFade) {
+		fadeHtml(selector, value, true);
+		return;
+	}
+
+	$(selector).html(value);
 }
 
 function timeUntil(timestamp) {
