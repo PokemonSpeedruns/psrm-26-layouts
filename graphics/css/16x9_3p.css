@@ -77,6 +77,34 @@
 	top: 740px;
 }
 
+.comms-name {
+	max-width: 210px;
+}
+
+.comms-pronouns {
+	max-width: 110px;
+
+}
+
+/* Comms panel. */
+.comms-container {
+	width: 320px;
+	height: 80px;
+	line-height: 80px;
+	left: 1570px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#comms-container1 {
+	top: 120px;
+}
+
+#comms-container2 {
+	top: 176px;
+}
+
+
 /* Game name panel. */
 #game-name {
 	width: 380px;
