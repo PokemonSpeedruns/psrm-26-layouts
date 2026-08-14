@@ -2,6 +2,10 @@
   "customData": {
     "run": [
       {
+        "name": "OBS Layout",
+        "key": "layoutOBS"
+      },
+      {
         "name": "Comm1 Name",
         "key": "commentator1Name"
       },
@@ -32,8 +36,8 @@
     ],
     "player": [
       {
-        "name": "Game",
-        "key": "runnerGame"
+        "name": "Starter",
+        "key": "runnerStarter"
       },
       {
         "name": "Tracker Key",

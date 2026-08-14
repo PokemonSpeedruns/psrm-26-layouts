@@ -57,6 +57,9 @@ $(() => {
 						fadeText('#pronouns' + (i + 1), `[${pronouns}]`, true);
 					}
 
+					$('#starter-img' + (i + 1)).attr('src', 'img/common/' + player.customData.runnerStarter + '.png');
+
+
 					i += 1;
 				}
 			}

@@ -9,6 +9,20 @@
 	top: 54px;
 }
 
+.runner-starter {
+    flex: 0 0 50px;
+	display: flex;
+    justify-content: flex-end;
+}
+
+.starter-img {
+    height: 100px;
+    width: auto;
+    transform: translateY(-15px);
+	margin-right: -10px;	
+	padding-right: 0px;
+}
+
 /* Runner name dynamic text. */
 .runner-name {
 	font-size: 24pt;
@@ -32,17 +46,17 @@
 
 /* Player 1 info position. */
 #runner-container1 {
-	left: 210px;
+	left: 190px;
 }
 
 /* Player 2 info position. */
 #runner-container2 {
-	left: 780px;
+	left: 760px;
 }
 
 /* Player 3 info position. */
 #runner-container3 {
-	left: 1350px;
+	left: 1330px;
 }
 
 
