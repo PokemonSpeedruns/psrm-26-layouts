@@ -117,6 +117,6 @@ function timeUntil(timestamp) {
 		return `In ${minutes} minute${minutes === 1 ? "" : "s"}`;
 	}
 
-	const hours = Math.ceil(minutes / 60);
+	const hours = Math.floor(minutes / 60);
 	return `In ${hours} hour${hours === 1 ? "" : "s"}`;
 }
